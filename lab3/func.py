@@ -1,4 +1,4 @@
-code = """
+
 # 1
 def grams_to_ounces(grams):
     return 28.3495231 * grams
@@ -151,9 +151,8 @@ def guess_the_number():
             print(f"Good job, {name}! You guessed my number in {cnt} guesses!")
             break
 guess_the_number()
-"""
-with open("C:\Users\Arsen\Desktop\pp2\lab3\func.py", "w") as file:
-    file.write(code)
+
+
 
 
 

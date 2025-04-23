@@ -35,6 +35,8 @@ def main():
                     mode = 'red'
                 elif event.key == pygame.K_g:
                     mode = 'green'
+                elif event.key == pygame.K_l:
+                    mode = "lemon"
                 elif event.key == pygame.K_b:
                     mode = 'blue'
                 elif event.key == pygame.K_e:
@@ -86,6 +88,8 @@ def get_color(mode):
         return (255, 0, 0)
     elif mode == 'green':
         return (0, 255, 0)
+    elif mode == 'lemon':
+        return (222, 222, 222)
     return WHITE
 
 

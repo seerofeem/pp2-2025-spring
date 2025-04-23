@@ -14,7 +14,7 @@ ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 running = True
 while running:
     screen.fill((255, 255, 255))
-    pygame.draw.circle(screen, (255, 0, 0), (ball_x, ball_y), BALL_RADIUS)
+    pygame.draw.circle(screen, (0, 0, 255), (ball_x, ball_y), BALL_RADIUS)
     pygame.display.update()
     
     for event in pygame.event.get():

@@ -35,8 +35,8 @@ while running:
     seconds = t.tm_sec
 
 
-    minute_angle = - (minutes * 6)  
-    second_angle = - (seconds * 6)  
+    minute_angle = - (minutes * 12)  
+    second_angle = - (seconds * 12)  
 
     blit_rotate_center(screen, right_hand, CENTER, minute_angle)
     blit_rotate_center(screen, left_hand, CENTER, second_angle)

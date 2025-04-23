@@ -101,7 +101,7 @@ print("Movies with IMDB score above 5.5:")
 print(filter_movies_above_5_5(movies))
 
 print("\nMovies in 'Romance' category:")
-print(get_movies_by_category(movies, "Suspense"))
+print(get_movies_by_category(movies, "Romance"))
 
 print("\nAverage IMDB score for all movies:")
 print(average_imdb_score(movies))

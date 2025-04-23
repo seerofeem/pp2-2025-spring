@@ -83,7 +83,8 @@ while running:
         # Increase level every 5 points
         if score % 5 == 0:
             level += 1
-            speed += 2  # Increase speed
+            speed += 2
+            
     else:
         snake.pop()  # Remove tail if no food is eaten
     
@@ -105,6 +106,8 @@ while running:
     # Draw snake
     for segment in snake:
         pygame.draw.rect(screen, GREEN, (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
+        if score >= 10:
+            pygame.draw.rect(screen, BLUE, (segment[0], segment[1], CELL_SIZE, CELL_SIZE))
     
     # Draw food with different colors based on weight and blinking effect
     if not blinking:
